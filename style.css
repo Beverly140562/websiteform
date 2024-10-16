@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poopins', sans-serif;
+    font-size: 20px;
+    box-sizing: border-box;
+}
+
+
+  
+.custom-background {
+    background-image: url('bg.webp');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.custom-backgrounds {
+    background-image: url('bg1.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+}
+
+
+
+
+.text-info  {
+    position: absolute;
+    color: #ddd;
+    font-style: oblique;
+    top: 17%;
+    left: 20%;
+    width: 250px;
+    height: 600px;
+    padding: 10px;
+    background: transparent;
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
+    border: 2px solid rgba(255, 255, 255, .18);
+    border-bottom: 2px solid #162938;
+    box-shadow: 0 8 32px 0 rgba(0, 0, 0, 0.37);
+    text-align: center;
+    justify-content: center;
+}
+
+input  {
+    font-style: italic;
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, .18);
+    border-bottom: 2px solid #162938;
+    top: 10%;
+    left: 20%;
+   
+   
+
+}
+
+textarea  {
+    font-style: italic;
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, .18);
+    border-bottom: 2px solid #162938;
+    padding: 5px;
+   
+
+}
+
+
+.container{
+    display: inline-block;
+    padding: 5px 5px;
+    margin-left:30%;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #ff5252;
+    border: 2px solid #000;
+    border-radius: 10px;
+    box-shadow: 5px 5px 0px #000;
+    transition: all 0.3s ease;
+}
+
+.container:hover{
+    background-color: #fff;
+    color: #ff5252;
+    border: 2px solid #ff5252;
+    box-shadow: 5px 5px 0px #ff5252;
+}
+
+.container:active{
+    background-color: pink;
+    box-shadow: none;
+    transform: translateY(4px);
+}
+
+/* style.css */
+
+.loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999; /* Ensure it overlays other elements */
+}
+
+.spinner {
+    border: 8px solid #f3f3f3; /* Light grey */
+    border-top: 8px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 50px; /* Size of the spinner */
+    height: 50px; /* Size of the spinner */
+    animation: spin 1s linear infinite; /* Animation */
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
+
