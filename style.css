@@ -8,7 +8,9 @@
     box-sizing: border-box;
 }
 
-
+section {
+    padding: 2rem 9%;
+}
   
 .custom-background {
     background-image: url('background.jpg');
