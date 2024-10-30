@@ -8,17 +8,20 @@
     box-sizing: border-box;
 }
 
-section {
-    padding: 2rem 9%;
-}
-  
-.custom-background {
+body{
+    background-image: url('background.jpg');
     background-image: url('background.jpg');
     background-size: cover;
     background-position: center;
     height: 100vh;
     width: 100%;
 }
+
+section {
+    padding: 2rem 9%;
+}
+  
+
 
 .custom-backgrounds {
     background-image: url('background.jpg');
