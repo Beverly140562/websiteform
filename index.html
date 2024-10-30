@@ -46,12 +46,16 @@
             </div>
         
 
-        <div class="container-fluid">
-            <div class="row">
-              <div class="col-sm-8 p-3 bg-primary text-white">.col</div>
-              <div class="col-sm-4 p-3 bg-dark text-white">.col</div>
-            </div>
-          </div>
+            <div class="container-fluid mt-3">
+                <h1>Two Unequal Responsive Columns</h1>
+                <p>Resize the browser window to see the effect.</p>
+                <p>The columns will automatically stack on top of each other when the screen is less than 576px wide.</p>
+                <div class="row">
+                  <div class="col-sm-4 p-3 bg-primary text-white">.col</div>
+                  <div class="col-sm-8 p-3 bg-dark text-white">.col</div>
+                </div>
+              </div>
+              
         
         
         <div class="custom-backgrounds ">
@@ -100,51 +104,6 @@
         </div>
     
 
-    
-        <div class="custom-backgrounds ">
-            <div class="row">
-                <div class="col-sm-3"></div>
-                <div class="col-sm-6 text-info">
-                    <form class="contact" id="contact">
-                        <div class="mb-3">
-                            <label class="form-label">Name:</label>
-                            <input type="text" class="form-control" id="fullName" placeholder="Full Name" required/>
-                        </div>
-                        <div class="mb-3">
-                            <label class="form-label">Email:</label>
-                            <input type="email" class="form-control" id="email_id" placeholder="Email Id" required/>
-                        </div>
-                        <div class="mb-3">
-                            <label class="form-label">Subject:</label>
-                            <input type="text" class="form-control" id="subject" placeholder="Subject" required/>
-                        </div>
-                        <div class="mb-3">
-                            <label class="form-label">Message:</label>
-                            <textarea id="message" class="form-control" placeholder="Message" required></textarea>
-                        </div>
-                        <div class="form-check mb-3">
-                            <label class="form-check-label">
-                                <input class="form-check-input" type="checkbox" name="remember"> Remember me
-                            </label>
-                        </div>
-                        <button type="submit" class="container" onclick="sendMail()">Send</button>
-                        <div id="loading" class="loading" style="display: none;">
-                            <div class="spinner">
-                                <div class="spinner">
-                                    <div class="spinner">
-                                        <div class="spinner">
-                                            <div class="spinner">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-                <div class="col-sm-3"></div>
-            </div>
-        </div>
     
         <script src="app.js"></script>
         
