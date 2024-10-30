@@ -43,6 +43,7 @@
         <div class="home" id="home">
             <div class="background-image d-flex justify-content-center align-items-center text-white">        
             </div>
+            </div>
         
 
         <div class="container-fluid">
@@ -51,8 +52,55 @@
               <div class="col-sm-4 p-3 bg-dark text-white">.col</div>
             </div>
           </div>
-        </div>
         
+        
+        <div class="custom-backgrounds ">
+            <div class="row">
+                <div class="col-sm-3"></div>
+                <div class="col-sm-6 text-info">
+                    <form class="contact" id="contact">
+                        <div class="mb-3">
+                            <label class="form-label">Name:</label>
+                            <input type="text" class="form-control" id="fullName" placeholder="Full Name" required/>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Email:</label>
+                            <input type="email" class="form-control" id="email_id" placeholder="Email Id" required/>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Subject:</label>
+                            <input type="text" class="form-control" id="subject" placeholder="Subject" required/>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Message:</label>
+                            <textarea id="message" class="form-control" placeholder="Message" required></textarea>
+                        </div>
+                        <div class="form-check mb-3">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="checkbox" name="remember"> Remember me
+                            </label>
+                        </div>
+                        <button type="submit" class="container" onclick="sendMail()">Send</button>
+                        <div id="loading" class="loading" style="display: none;">
+                            <div class="spinner">
+                                <div class="spinner">
+                                    <div class="spinner">
+                                        <div class="spinner">
+                                            <div class="spinner">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-sm-3"></div>
+            </div>
+        </div>
+    
+
+    
         <div class="custom-backgrounds ">
             <div class="row">
                 <div class="col-sm-3"></div>
