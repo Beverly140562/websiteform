@@ -20,6 +20,6 @@ body{
     color: #ab00a892;
 }
 
-.nav-link:hover, nav-link.active {
+.navbar-nav:hover, nav-link.active {
     color: var(--pink);
 }
