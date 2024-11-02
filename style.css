@@ -26,3 +26,7 @@ section {
 .nav-link {
     color: #ab00a892;
 }
+
+.nav-link:hover, nav-link.active {
+    color: var(--pink);
+}
