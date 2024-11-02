@@ -13,3 +13,7 @@ body{
 a {
     color: #ab00a892;
 }
+
+a:hover{
+    color: var(--pink);
+}
