@@ -22,5 +22,30 @@ section {
 .home{
     padding-top: 1%;
 }
+
+nav ul {
+    display: flex;
   
+}
+
+nav ul li a{
+    font-size: 2rem;
+    padding: 0 1.5rem;
+    color: #ab00a892;
+}
+
+nav ul li a:hover{
+    color: var(--pink);
+
+}
+
+nav .icons a{
+    font-size: 3rem;
+    color: #333;
+    margin-left: 1.5rem;
+}
+
+nav .icons a:hover{
+    color: var(--pink);
+}
 
