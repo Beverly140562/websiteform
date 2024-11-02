@@ -18,8 +18,10 @@ body{
 
 .nav-link {
     color: #ab00a892;
+    font-weight: 500;
+    position: relative;
 }
 
-.navbar-nav:hover, nav-link.active {
+.nav-link:hover, .nav-link.active {
     color: var(--pink);
 }
