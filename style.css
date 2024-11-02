@@ -8,8 +8,12 @@ body{
     height: 100vh;
     width: 100%;
     font-family: 'Poopins', sans-serif;
+    box-sizing: border-box;
 }
 
 #bg {
     background-color: pink;
+}
+navbar {
+    padding: 0;
 }
