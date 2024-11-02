@@ -10,10 +10,9 @@ body{
     font-family: 'Poopins', sans-serif;
 }
 
-a {
-    color: #ab00a892;
-}
-
-a:hover{
-    color: var(--pink);
+.navbar-toggler-icon {
+    color: rgb(18, 18, 35);
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
 }
