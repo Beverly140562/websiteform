@@ -18,16 +18,19 @@
 <body>
 
   <!--Navbar-->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top mt-1">
         <div class="container">
           <img src="bev.jpg" width="80" height="80" class="navbar-brand rounded-pill" href="#home">
           <button class="navbar-toggler me-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon "></span>
           </button>
-          <div class="collapse navbar-collapse " id="navbarSupportedContent">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
                 <a class="nav-link text-info mx-3 fs-5" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-info mx-3 fs-5" href="#feature">Features</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link text-info mx-3 fs-5" href="#contact">Contact</a>
@@ -35,7 +38,7 @@
               <li class="nav-item">
                 <a class="nav-link text-info mx-3 fs-5" href="#portfolio">Portfolio</a>
               </li>
-              <li class="nav-item dropdown">
+              <li class="dropdown" data-bs-theme="dark"> 
                 <a class="nav-link dropdown-toggle text-info fs-5" href="#page" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Page
                 </a>
@@ -54,18 +57,18 @@
 
     |<!--Home--> 
 
-    <div class="container-fluid text-white" id="home">
+    <div class="container-fluid text-white mt-5 p-5" id="home">
       <div class="row ">
         <div class="col-sm-4">
-          <img src="mypict.jpg" class="img-fluid rounded-start" alt="...">
+          <img src="mypict.jpg" class="img-fluid rounded-start border border-2" alt="...">
         </div>
         <div class="col-sm-8 p-3">
-          <div class="card-body mb-3"><br><br>
-            <h5 class="card-title">WELOME TO MY WORD</h5><br><br>
-            <H1>Hello, I'm Beverly</H1>
-            <p class="card-text ">I'm good at getting along with everyone, <br>
+          <div class="card-body mb-3">
+            <h5 class="card-title mt-2 p-1">WELOME TO MY WORD</h5>
+            <H1 class="mt-5 p-1">Hello, I'm Beverly</H1>
+            <p class="card-text mt-2 p-1">I'm good at getting along with everyone, <br>
                but sometimes I have an attitude that's a bit off when I'm not in the mood.</p>
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand p-5" href="#">
               <img src="facebook-square-logo-24.png" alt="Bootstrap" width="45" height="45">
             </a>
           </div>
@@ -74,32 +77,96 @@
     </div>
 
     <!--Features-->
-    <div class="conainer">
-    <div class="row ">
-      <div class="col-sm-2"></div>
-      <div class="col-sm-3">
-        <div class="card">
-          <img src="weather.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Weather Nationwide</h5>
-            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <a href="https://beverlymaonajod1.vercel.app/" class="btn btn-primary">Go somewhere</a>
+    <h2 class="text-center text-white mt-5 p-1 bg-dark" id="feature"> Features </h2>
+    <div class="container-fluid mt-3"> 
+      <div class="row ">
+        <div class="col-sm-4">
+          <div class="card">
+            <img src="weather.png" class="card-img-top border border-5" alt="...">
+            <div class="card-body">
+              <a href="https://beverlymaonajod1.vercel.app/" class="btn btn-primary"data-bs-toggle="modal" data-bs-target="#myModal">Read more</a>
+            </div>
+          </div>
+        </div>     
+    <div class="modal" id="myModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Weather Nationwide</h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            It's all about the weather Nationwide.
+          </div>
+          <a href="https://beverlymaonajod1.vercel.app/" class="btn text-center text-primary">
+            <img src="link-external-regular-24.png" class="link" width="20"> Website </a>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
           </div>
         </div>
       </div>
-      <div class="col-sm-3">
-        <div class="card">
-          <img src="weatheriligan.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Weather Local</h5>
-            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <a href="https://get-code-playgroundnew.vercel.app/" class="btn btn-primary">Go somewhere</a>
-          </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="card">
+        <img src="weatheriligan.png" class="card-img-top border border-5" alt="...">
+        <div class="card-body">
+          <a href="https://beverlymaonajod1.vercel.app/" class="btn btn-primary"data-bs-toggle="modal" data-bs-target="#myModal">Read more</a>
         </div>
       </div>
+      </div>
+      <div class="modal" id="myModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">Weather Local</h4>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+              It's all about the weather Nationwide.
+            </div>
+            <a href="https://get-code-playgroundnew.vercel.app/" class="btn text-center text-primary">
+              <img src="link-external-regular-24.png" class="link" width="20"> Website </a>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+            </div> 
+          </div>
+        </div>
+    </div>   
+    <div class="col-sm-4">
+      <div class="card">
+        <img src="shopping.png" class="card-img-top border border-5" alt="...">
+        <div class="card-body">
+          <a href="https://beverlymaonajod1.vercel.app/" class="btn btn-primary"data-bs-toggle="modal" data-bs-target="#myModal">Read more</a>
+        </div>
+      </div>
+      </div>
+      <div class="modal" id="myModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">Shopping app</h4>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+              It's all about the weather Nationwide.
+            </div>
+            <a href="https://beverly140562.github.io/Midterm/" class="btn text-center text-primary">
+              <img src="link-external-regular-24.png" class="link" width="20"> Website </a>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+            </div> 
+          </div>
+        </div>
+    </div>  
+</div>
+</div>
+
+
+
+      
       <div class="col-sm-3">
         <div class="card">
-          <img src="shopping.png" class="card-img-top" alt="...">
+          <img src="shopping.png" class="card-img-top border border-5" alt="...">
           <div class="card-body">
             <h5 class="card-title">Shopping web</h5>
             <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
@@ -112,12 +179,12 @@
     </div>
            
         <!--contact-->
-       
-        <div class="container-fluid mt-5  ">
+        <h2 class="text-center text-white mt-5 p-1 bg-dark" id="contact"> Contact us</h2>
+        <div class="container-fluid p-5">
             <div class="row">
                 <div class="col-sm-3 p-3 "></div>
                 <div class="col-sm-6 p-3  text-info">
-                    <form class="contact" id="contact">
+                    <form class="contact">
                         <div class="mb-3">
                             <label class="form-label">Name:</label>
                             <input type="text" class="form-control" id="fullName" placeholder="Full Name" required/>
@@ -157,8 +224,11 @@
                 <div class="col-sm-3 p-3 "></div>
             </div>
         </div>
-        <br>
-        <br>
+        
+
+        <div class="mt-1 p-1 text-white text-center bg-dark">
+          <p>Beverly Salde</p>
+        </div>
   
         
         
