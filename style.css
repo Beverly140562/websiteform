@@ -1,3 +1,4 @@
+
 * {
 
     font-family: 'Poopins', sans-serif;
@@ -12,11 +13,11 @@ body{
 }
 
 .nav-link {
-    #{$navbar-dark-color: #ab00a892;}
+    color: #ab00a892;
     font-weight: 500;
     position: relative;
 }
 
-nav-link:hover, $nav-link.active {
+.nav-link:hover, .nav-link.active {
     color: var(--pink);
 }
