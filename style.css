@@ -11,34 +11,32 @@ body{
     box-sizing: border-box;
 }
 
-.nameani {
+.h1, span {
     display: inline-block;
 }
 
-.nameani h2 {
-    letter-spacing: 10px;
-    content: '';
-    position: absolute;
-    left: 120%;
-    width: 120%;
-    height: 100%;
-    background: linear-gradient(90deg, transparent 0%, #000 5%, #000 100%);
-    animation: animate 5.5s linear forwards;
-}
-@keyframes animate
-{
-    0%
-    {
-        left: 110%;
-    }
-    100%
-    {
-        left: 20%;
-    }
-}
-.nameani span {
+.h1, span {
     color: rgb(226, 56, 135);
+    letter-spacing: 5px;
+    font-family: monospace;
+    border-right: 5px solid;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: 
+                typing 2s, 
+                cursor .4s step-end infinite alternate;
 }
+
+@keyframes cursor {
+    50% { border-color: transparent;}
+}
+
+@keyframes typing {
+    from { width: 0;}
+}
+
+
     
 
 .navbar-nav .nav-link {
@@ -88,6 +86,6 @@ body{
     font-size: 34px;
 }
 
-h1 span{
+.about span{
     color: rgb(226, 56, 135);
 }
