@@ -12,5 +12,5 @@ body{
 }
 
 h1 h2 h5 {
-    color: black;
+    --bs-blue: #0d6efd
 }
