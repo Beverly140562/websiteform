@@ -11,12 +11,35 @@ body{
     box-sizing: border-box;
 }
 
-.ani {
-    position: relative;
-    margin: 0;
-    font-size: 4em;
-    
+.nameani {
+    display: inline-block;
 }
+
+.nameani h2 {
+    letter-spacing: 10px;
+    content: '';
+    position: absolute;
+    left: 120%;
+    width: 120%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent 0%, #000 5%, #000 100%);
+    animation: animate 5.5s linear forwards;
+}
+@keyframes animate
+{
+    0%
+    {
+        left: 110%;
+    }
+    100%
+    {
+        left: 20%;
+    }
+}
+.nameani span {
+    color: rgb(226, 56, 135);
+}
+    
 
 .navbar-nav .nav-link {
     padding: 0 1.5rem;
