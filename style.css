@@ -11,16 +11,3 @@ body{
     box-sizing: border-box;
 }
 
-
-h1 h2 h5 {
-    font-weight: 600;
-}
-
-.navbar-nav .nav-link {
-    font-weight: 500;
-    color:var(dark);
-}
-
-.navbar-nav .nav-link.active{
-    color:var(dark);
-}
