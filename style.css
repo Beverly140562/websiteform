@@ -11,38 +11,8 @@ body{
     box-sizing: border-box;
 }
 
-.wrapper {
-    display: flex;
-}
-.dynamic span {
-    font-weight: 500;
-    font-size: 60px;
-    color:rgb(226, 56, 135);
-}
-.dynamic {
-    margin-left: 15px;
-    line-height:90px;
-    height:90px;
-    background: rgb(226, 56, 135);
-}
-
-.dynamic span::after {
-    content: "";
-    position: absolute;
-    background-color: transparent;
-    left: 57%;
-    height:90px;
-    width: 15%;
-    border-left: 2px solid;
-    animation: typing 3s steps(7)
-    infinite;
-}
-@keyframes typing {
-    40%, 
-    60% {left: calc(68% + 30px);
-    }
-    100%
-    {left:57%}
+span {
+    color: rgb(226, 56, 135);
 }
 
 .navbar-nav .nav-link {
@@ -97,13 +67,11 @@ body{
 }
 
 .footer {
-    text-align: center;
+
     padding: 1.5rem;
     margin-top: 1.5rem;
     padding-top: 2.5rem;
-    font-size: 2rem;
-    color: #fff;
-    border-top: .1rem solid rgba(0, 0, 0, .1);
+    border-top: .1rem solid rgba(20, 15, 15, 0.723);
 }
 
 .footer span {
