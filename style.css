@@ -11,20 +11,38 @@ body{
     box-sizing: border-box;
 }
 
-.h2  {
-    display: inline-block;
+.wrapper {
+    display: flex;
+}
+.dynamic span {
+    font-weight: 500;
+    font-size: 60px;
+    color:rgb(226, 56, 135);
+}
+.dynamic {
+    margin-left: 15px;
+    line-height:90px;
+    height:90px;
+    background: rgb(226, 56, 135);
 }
 
-.h2 span::after {
+.dynamic span::after {
     content: "";
     position: absolute;
-    color: rgb(226, 56, 135);
-    letter-spacing: 5px;
-    height: 100%;
-    border-right: 5px solid;
-    width: 100%;
-    white-space: nowrap;
-    overflow: hidden;
+    background-color: transparent;
+    left: 57%;
+    height:90px;
+    width: 15%;
+    border-left: 2px solid;
+    animation: typing 3s steps(7)
+    infinite;
+}
+@keyframes typing {
+    40%, 
+    60% {left: calc(68% + 30px);
+    }
+    100%
+    {left:57%}
 }
 
 .navbar-nav .nav-link {
@@ -75,5 +93,19 @@ body{
 }
 
 .about span{
+    color: rgb(226, 56, 135);
+}
+
+.footer {
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+    padding-top: 2.5rem;
+    font-size: 2rem;
+    color: #fff;
+    border-top: .1rem solid rgba(0, 0, 0, .1);
+}
+
+.footer span {
     color: rgb(226, 56, 135);
 }
