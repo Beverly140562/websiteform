@@ -66,6 +66,21 @@ span {
     color: rgb(226, 56, 135);
 }
 
+.carousel {
+    max-width: 80%;
+    left: 10%;
+}
+
+
+
+.shop {
+    color: rgb(15, 14, 15);
+}
+
+.card-body .btn-primary {
+    background-color: rgb(133, 10, 67);
+}
+
 .footer {
 
     padding: 1.5rem;
@@ -73,6 +88,7 @@ span {
     padding-top: 2.5rem;
     border-top: .1rem solid rgba(20, 15, 15, 0.723);
 }
+
 
 .footer span {
     color: rgb(226, 56, 135);
