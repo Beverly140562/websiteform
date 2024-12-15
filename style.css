@@ -43,7 +43,11 @@ body{
     font-size: 26px;
     font-weight: 700;
     letter-spacing: 1px;
+    cursor:default;
+    opacity:0;
+    animation: slideRight 1s ease forwards;
 }
+
 span{
     color: var(--hover-color);
 }
@@ -59,7 +63,11 @@ span{
     color: var(--text-color);
     font-weight: 500;
     padding: 10px 20px;
+    transition: .7s;
+    opacity: 0;
+    animation: slideTop .5s ease forwards ;
 }
+
 .nav-item a:hover{
     color: var(--hover-color);
     text-shadow: 0 0 10px rgba(18,247,255,0.6),
@@ -91,10 +99,9 @@ span{
     min-height: 100vh;
     height: 100%;
     width: 100%;
-    display: grid;
     grid-template-columns: repeat(2,1fr);
     align-items: center;
-    grid-gap:4em;
+  
 }
 .home-name{
     max-width: 600px;
@@ -102,6 +109,9 @@ span{
 .home-name .h1 {
     font-size: var(--big-font);
     font-weight: 700;
+    opacity: 0;
+    animation: slideBottom 1s ease forwards;
+    animation-delay: .7s;
 }
 .change-text{
     font-size: 1.5rem;
@@ -196,21 +206,29 @@ a.btn:hover::before{
 .social-icon{
     margin-top: 8rem;
     display: flex;
-    justify-content: space-between;
     width: 220px;
     height: 40px;
-}.social-icon a{
+}
+
+.social-icon a{
+    margin:30px 15px 30px 0;
     display: inline-flex;
     width: 50px;
     height: 100%;
     justify-content: center;
     align-items: center;
-    background: var(--bg-color);
+    background: transparent;
     color: var(--hover-color);
     border: 2px solid var(--hover-color);
     transition: .6s;
     box-shadow: 0 0 0.3rem #12f7ff;
     border-radius: 5px;
+}
+
+.social-icon a:hover{
+    background: #12f7ff;
+    color: #250821;
+    box-shadow: 0 0 20px #12f7ff;
 }
 .section-title {
     margin-bottom: 60px;
@@ -243,8 +261,11 @@ a.btn:hover::before{
 
 
 
-.about span{
-    color: rgb(226, 56, 135);
+.about{
+    color: var(--text-color);
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 1px;
 }
 
 .carousel {
@@ -258,10 +279,40 @@ a.btn:hover::before{
     color: rgb(15, 14, 15);
 }
 
+
 .card-body .btn-primary {
-    background-color: rgb(133, 10, 67);
+    background-color:#250821;
+    box-shadow: 0 0 .5rem #12f7ff;
+    transition: .4s;
 }
 
+.card-body .btn-primary:hover{
+    background-color: #12f7ff;
+
+}
+
+.card-img-top{
+    transition: .6s;
+}
+
+
+.card-img-top:hover{
+    transform: scale(1.1);
+}
+
+.modal-footer button {
+    background-color:#250821;
+    box-shadow: 0 0 .5rem #12f7ff;
+    transition: .4s;
+}
+
+.modal-footer button:hover{
+    background-color: #12f7ff;
+}
+
+.contbg{
+    background-color: black;
+}
 .footer {
 
     padding: 1.5rem;
@@ -273,4 +324,43 @@ a.btn:hover::before{
 
 .footer span {
     color: rgb(226, 56, 135);
+}
+
+
+
+
+
+
+
+@keyframes slideRight{
+    0%{
+        transform: translateX(-100px);
+        opacity:0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity:1;
+    }
+}
+
+@keyframes slideTop{
+    0%{
+        transform: translateY(100px);
+        opacity:0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity:1;
+    }
+}
+
+@keyframes slideBottom{
+    0%{
+        transform: translateX(-100px);
+        opacity:0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity:1;
+    }
 }
